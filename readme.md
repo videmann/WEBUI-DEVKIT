@@ -1,11 +1,5 @@
-<h1>OptimizedHTML 5</h1>
-<p>Lightweight startup HTML5 template, based on Gulp.</p>
-
-<p>
-	<img src="https://raw.githubusercontent.com/agragregra/oh5/master/app/img/_src/preview.jpg" alt="Start HTML Template">
-</p>
-
-<p>Author: <a href="https://webdesign-master.ru/blog/tools/2019-07-15-optimizedhtml-5.html" target="_blank">WebDesign Master</a></p>
+<h1>WEBUI-DEVKIT</h1>
+<p>Web User Interface Developer Kit based on Gulp</p>
 
 <p><strong>OptimizedHTML 5</strong> - lightweight startup HTML5 template with <strong>Gulp 4</strong>, <strong>Sass</strong>, <strong>Browsersync</strong>, <strong>Autoprefixer</strong>, <strong>Uglify-ES</strong>, <strong>Clean-CSS</strong>, <strong>Rsync</strong>, <strong>CSS Reboot</strong> (Bootstrap reboot). It uses best practices for <strong>responsive images</strong> optimizing and contains a <strong>.htaccess</strong> file for resources caching (images, fonts, HTML, CSS, JS and other content types).</p>
 
@@ -14,7 +8,7 @@
 <pre>git clone https://github.com/agragregra/oh5</pre>
 
 <ol>
-	<li>Clone or <a href="https://github.com/agragregra/OptimizedHTML-5/archive/master.zip">Download</a> <strong>OptimizedHTML 5</strong> from GitHub</li>
+	<li>Clone <strong>WEBUI-DEVKIT</strong> from GitHub</li>
 	<li>Install Node Modules: <strong>npm i</strong></li>
 	<li>Run: <strong>gulp</strong></li>
 </ol>
@@ -28,15 +22,6 @@
 </ul>
 
 <h2>Basic rules</h2>
-
-<ol>
-	<li>All custom <strong title="scripts task"><em>scripts</em></strong> located in <strong>app/js/_custom.js</strong></li>
-	<li>All custom <strong title="styles task"><em>styles</em></strong> located in <strong>app/sass/main.sass</strong></li>
-	<li>All Sass <strong>vars</strong> placed in <strong>app/sass/_vars.sass</strong></li>
-	<li>All <strong>fonts</strong> plug in <strong>app/sass/_fonts.sass</strong></li>
-	<li>All CSS styles of <strong>libraries</strong> plug in <strong>app/sass/_libs.sass</strong></li>
-	<li>All responsive <strong>images</strong> placed in <strong>app/img/_src/</strong> folder. All source images should initially have a 2x resolution. Result image folders after resize & compression: <strong>img/@1x/</strong> and <strong>img/@2x/</strong> accordingly.</li>
-</ol>
 
 <h2>Included features</h2>
 
