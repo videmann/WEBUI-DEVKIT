@@ -49,6 +49,7 @@ gulp.task('styles', function() {
 gulp.task('scripts', function() {
 	return gulp.src([
 		// 'node_modules/jquery/dist/jquery.min.js', // Optional jQuery plug-in (npm i --save-dev jquery)
+		// 'node_modules/lodash/lodash.js',
 		'app/js/_src/main.js', // JS libraries (all in one)
 		])
 	.pipe(babel())

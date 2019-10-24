@@ -1,21 +1,21 @@
 {
-	"name": "optimizedhtml",
-	"version": "5.0.0",
-	"description": "OptimizedHTML 5 - Start HTML Template",
+	"name": "webui-devkit",
+	"version": "1.0.0",
+	"description": "Web User Interface Developer Kit",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
-	"author": "WebDesign Master",
+	"author": "w.serxio",
 	"license": "ISC",
 	"devDependencies": {
 		"@babel/core": "^7.6.4",
 		"@babel/preset-env": "^7.6.3",
-		"browserslist": "> 0.25%, not dead",
 		"@babel/preset-es2015": "^7.0.0-beta.53",
 		"bootstrap": "^4.3.1",
 		"browser-sync": "^2.26.7",
 		"del": "^5.1.0",
+		"font-awesome": "^4.7.0",
 		"gulp": "^4.0.2",
 		"gulp-autoprefixer": "^7.0.0",
 		"gulp-babel": "^8.0.0",
@@ -27,6 +27,13 @@
 		"gulp-rsync": "0.0.8",
 		"gulp-sass": "^4.0.2",
 		"gulp-sourcemaps": "^2.6.5",
-		"gulp-uglify-es": "^1.0.4"
+		"gulp-uglify-es": "^1.0.4",
+		"jquery": "^3.4.1",
+		"lodash": "^4.17.15",
+		"normalize.css": "^8.0.1",
+		"underscore": "^1.9.1"
+	},
+	"dependencies": {
+		"reset.css": "^2.0.2"
 	}
 }
