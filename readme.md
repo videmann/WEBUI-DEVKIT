@@ -1,11 +1,12 @@
 <h1>WEBUI-DEVKIT</h1>
 <p>Web User Interface Developer Kit based on Gulp</p>
 
-<p><strong>OptimizedHTML 5</strong> - lightweight startup HTML5 template with <strong>Gulp 4</strong>, <strong>Sass</strong>, <strong>Browsersync</strong>, <strong>Autoprefixer</strong>, <strong>Uglify-ES</strong>, <strong>Clean-CSS</strong>, <strong>Rsync</strong>, <strong>CSS Reboot</strong> (Bootstrap reboot). It uses best practices for <strong>responsive images</strong> optimizing and contains a <strong>.htaccess</strong> file for resources caching (images, fonts, HTML, CSS, JS and other content types).</p>
+<p><strong>WEBUI-DEVKIT
+</strong> - lightweight startup HTML5 template with <strong>Gulp 4</strong>, <strong>Sass</strong>, <strong>Browsersync</strong>, <strong>Autoprefixer</strong>, <strong>Uglify-ES</strong>, <strong>Clean-CSS</strong>, <strong>Rsync</strong>, <strong>CSS Reboot</strong> (Bootstrap reboot). It uses best practices for <strong>responsive images</strong> optimizing and contains a <strong>.htaccess</strong> file for resources caching (images, fonts, HTML, CSS, JS and other content types).</p>
 
-<h2>How to use OptimizedHTML 5</h2>
+<h2>How to use</h2>
 
-<pre>git clone https://github.com/agragregra/oh5</pre>
+<pre>git clone https://github.com/videmann/WEBUI-DEVKIT</pre>
 
 <ol>
 	<li>Clone <strong>WEBUI-DEVKIT</strong> from GitHub</li>
@@ -29,7 +30,6 @@
 	<li><a href="https://getbootstrap.com/docs/4.0/content/reboot/">bootstrap-reboot.scss</a> - Bootstrap Reboot CSS collection</li>
 	<li>
 		<a href="https://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints">_breakpoints.scss</a> - Bootstrap Breakpoints mixin</li>
-	<li><a href="https://github.com/agragregra/OptimizedHTML-5/blob/master/app/js/_lazy.js">js/_lazy.js</a> - Lazy loading images using Intersection Observer</li>
 </ol>
 
 <h2>Lazy loading images</h2>
