@@ -1,6 +1,6 @@
 $(document).ready(function(){
     
-    // config
+    // конфиг
     var config = (function(){
         return {
             ymSensor: 'XXXXXX'
@@ -33,7 +33,7 @@ $(document).ready(function(){
                     goal = currentForm.data('goal');
 
                 $.ajax({
-                    url: 'https://httpbin.org/post', //tester
+                    url: 'https://httpbin.org/post', // Заменить на свой
                     method: 'POST',
                     data: currentForm.serialize(),
                     beforeSend: function(){},

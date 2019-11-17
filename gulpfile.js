@@ -6,11 +6,7 @@ var gulp         = require('gulp'),
 	cleancss     = require('gulp-clean-css'),
 	autoprefixer = require('gulp-autoprefixer'),
 	rsync        = require('gulp-rsync'),
-	newer        = require('gulp-newer'),
-	rename       = require('gulp-rename'),
-	babel		 = require('gulp-babel'),
-	rigger		 = require('gulp-rigger'),
-	soursemaps	 = require('gulp-sourcemaps'),
+	handlebars	 = require('gulp-handlebars'),
 	del          = require('del');
 
 // Local Server
@@ -20,7 +16,7 @@ gulp.task('browser-sync', function() {
 			baseDir: 'app'
 		},
 		notify: false,
-		// online: false, // Work offline without internet connection
+		online: true, // Work offline without internet connection
 		// tunnel: true, tunnel: 'projectname', // Demonstration page: http://projectname.localtunnel.me
 	})
 });
@@ -45,23 +41,23 @@ gulp.task('styles', function() {
 	.pipe(browserSync.stream())
 });
 
-// Scripts & JS Libraries
 gulp.task('scripts', function() {
 	return gulp.src([
-		'node_modules/jquery/dist/jquery.min.js',
+		// 'node_modules/jquery/dist/jquery.min.js',
+
+		// bootstrap
+		// 'node_modules/bootstrap/dist/js/bootstrap.min.js',
 		
 		// data manipulations || docs: https://lodash.com
 		//'node_modules/lodash/lodash.js',
 
 		// form validation || docs: https://jqueryvalidation.org
-		'node_modules/jquery-validation/dist/jquery.validate.js',
-		'node_modules/jquery-validation/dist/localization/messages_ru.min.js',
-
-		// JS libraries (all in one) + initialisation
-		'app/js/_src/main.js',
+		// 'node_modules/jquery-validation/dist/jquery.validate.js',
+		// 'node_modules/jquery-validation/dist/localization/messages_ru.min.js',
+		'app/js/_src/main.js'
 	])
 	.pipe(concat('main.min.js'))
-	.pipe(uglify()) // Minify js (opt.)
+	.pipe(uglify())
 	.pipe(gulp.dest('app/js'))
 	.pipe(browserSync.reload({ stream: true }))
 });
