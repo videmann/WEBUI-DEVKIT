@@ -20,7 +20,30 @@
 <body>
 	<div class="layout layout_theme--default">
 		<header class="layout__header"></header>
-		<main class="layout__content"></main>
+		<main class="layout__content">
+			<div class="container">
+				<h1>form validation</h1>
+				<hr>
+
+				<div class="row">
+					<div class="col-md-12">
+						<form method="POST" data-goal="{{goal-name}}" role="form">
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text" id="email">Ваш email</span>
+								</div>
+								<input class="form-control" type="email" name="email" placeholder="Recipient's text" aria-label="Recipient's " aria-describedby="email">
+							</div>
+							<div class="form-check">
+								<input id="agreement" class="form-check-input" type="checkbox" name="agreement" value="true">
+								<label for="agreement" class="form-check-label">Согласен с условиями</label>
+							</div>
+							<button type="submit" class="btn btn-primary">Отправить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
 		<footer class="layout__footer"></footer>
 	</div>
 

@@ -48,12 +48,18 @@ gulp.task('styles', function() {
 // Scripts & JS Libraries
 gulp.task('scripts', function() {
 	return gulp.src([
-		// 'node_modules/jquery/dist/jquery.min.js', // Optional jQuery plug-in (npm i --save-dev jquery)
-		// 'node_modules/lodash/lodash.js',
-		'app/js/_src/main.js', // JS libraries (all in one)
-		])
-	.pipe(babel())
-	.pipe(soursemaps.write('.'))
+		'node_modules/jquery/dist/jquery.min.js',
+		
+		// data manipulations || docs: https://lodash.com
+		//'node_modules/lodash/lodash.js',
+
+		// form validation || docs: https://jqueryvalidation.org
+		'node_modules/jquery-validation/dist/jquery.validate.js',
+		'node_modules/jquery-validation/dist/localization/messages_ru.min.js',
+
+		// JS libraries (all in one) + initialisation
+		'app/js/_src/main.js',
+	])
 	.pipe(concat('main.min.js'))
 	.pipe(uglify()) // Minify js (opt.)
 	.pipe(gulp.dest('app/js'))

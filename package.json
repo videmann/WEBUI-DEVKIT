@@ -29,6 +29,7 @@
 		"gulp-sourcemaps": "^2.6.5",
 		"gulp-uglify-es": "^1.0.4",
 		"jquery": "^3.4.1",
+		"jquery-validation": "^1.19.1",
 		"lodash": "^4.17.15",
 		"normalize.css": "^8.0.1",
 		"underscore": "^1.9.1"
